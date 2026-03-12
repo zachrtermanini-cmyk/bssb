@@ -26646,9 +26646,7 @@ function BeeSwarmSimulator(DATA){
                     out.grounded=true
                     out.body.velocity.y=out.jumpPower
                 }
-                if(user.keys['p']||jumpingButton){
-                    out.groundedfalse
-                }
+                
                 out.body.velocity.x/=dt*out.friction+1
                 out.body.velocity.z/=dt*out.friction+1
                 
@@ -26667,8 +26665,8 @@ function BeeSwarmSimulator(DATA){
                 touchedJumped=1
             }
 
-            if((user.clickedKeys['p']||touchedJumped){
-                out.grounded=false
+            if((out.body.velocity.y<5||out.removeAirFrictionUntilGrounded)&&(user.clickedKeys[' ']||touchedJumped)&&out.currentGear.glider!=='none'){
+                
                 if(!out.isGliding){
                     
                     out.isGliding=true
@@ -34762,6 +34760,7 @@ function BeeSwarmSimulator(DATA){
     
 
 }
+
 
 
 
