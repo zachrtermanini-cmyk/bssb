@@ -2999,7 +2999,7 @@ function BeeSwarmSimulator(DATA){
         
         basic:{
             
-            u:0,v:0,meshPartId:0,gatherSpeed:1,gatherAmount:100,speed:100,convertSpeed:0,convertAmount:Infinity,attack:1000000,energy:Infinity,favoriteTreat:'sunflowerSeed',rarity:'common',color:'white',description:'An ordinary bee. Well rounded and hard working!',giftedHiveBonus:{oper:'*',stat:'redPollen,bluePollen,whitePollen',num:1.2}
+            u:0,v:0,meshPartId:0,gatherSpeed:1,gatherAmount:100,speed:20,convertSpeed:0,convertAmount:Infinity,attack:Infinity,energy:Infinity,favoriteTreat:'sunflowerSeed',rarity:'common',color:'white',description:'An ordinary bee. Well rounded and hard working!',giftedHiveBonus:{oper:'*',stat:'redPollen,bluePollen,whitePollen',num:1.2}
         },
         
         looker:{
@@ -3162,7 +3162,7 @@ function BeeSwarmSimulator(DATA){
         
         brave:{
             
-            u:128*7/2048,v:256/2048,meshPartId:0,gatherSpeed:4,gatherAmount:10,speed:16.8,convertSpeed:4,convertAmount:200,attack:5,energy:30,favoriteTreat:'pineapple',rarity:'rare',color:'white',description:'This loyal bee will do anything to protect its owner.',giftedHiveBonus:{oper:'+',stat:'whiteBeeAttack,redBeeAttack,blueBeeAttack',num:1}
+            u:128*7/2048,v:256/2048,meshPartId:0,gatherSpeed:0,gatherAmount:100,speed:0,convertSpeed:,convertAmount:Infinity,attack:5,energy:30,favoriteTreat:'pineapple',rarity:'rare',color:'white',description:'This loyal bee will do anything to protect its owner.',giftedHiveBonus:{oper:'+',stat:'whiteBeeAttack,redBeeAttack,blueBeeAttack',num:1}
         },
         
         windy:{
@@ -34760,6 +34760,7 @@ function BeeSwarmSimulator(DATA){
     
 
 }
+
 
 
 
